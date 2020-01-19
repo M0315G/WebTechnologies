@@ -1,67 +1,128 @@
 <html>
 
 <head>
-    <title></title>
+    <title>My Resume</title>
     <style>
-        .split {
-            height: 100%;
+        .about {
+            height: 200vh;
+            display: flex;
+        }
+
+        .profile_pic {
             width: 50%;
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            overflow-x: hidden;
-            padding-top: 20px;
-        }
-
-        .left {
-            left: 0;
-            background-color: skyblue;
-        }
-
-        .right {
-            right: 0;
-            background-color: whitesmoke;
-            overflow: auto;
-        }
-
-        .centered {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
             align-items: center;
-            text-align: center;
+            font-size: 30px;
+            overflow-x: hidden;
+            overflow-y: hidden;
 
         }
 
-        .centered img {
-            width: 150px;
-            border-radius: 50%;
+        .about_pages {
+            width: 50%;
+
+        }
+
+        .about_pages div {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            color: white;
+        }
+
+        .about_pages div>p {
+            width: 80%;
+            font-size: 18px;
+            line-height: 30px;
+        }
+
+        footer {
+            height: 100vh;
+            display: block;
+            box-sizing: border-box;
+            padding: 5px;
+            background-color: bisque;
+
+        }
+
+        .about_pages div:nth-child(1) {
+            background-color: rgb(31, 88, 107);
+        }
+
+        .about_pages div:nth-child(2) {
+            background-color: rgb(56, 134, 89);
         }
     </style>
 </head>
 
 <body>
 
-    <div class="split left">
-        <div class="centered">
+    <section class="about">
+        <div class="profile_pic">
             <img src="user.png">
-
         </div>
-    </div>
-    <div class="split right">
-        <div class="centered">
-            <p style="font-size:50px;color: blue;font-family: Verdana, Geneva, Tahoma, sans-serif;margin-top: 20px;">
-                Manish Gupta<br><br>
-                <p style="font-size: 45px;">A student of Computer Science & Technology</p>
-
-            </p>
+        <div class="about_pages">
+            <div style="height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white; line-height: 5px;">
+                <font style="font-size: 30px;">
+                    <center>Manish Gupta</center><br><br><br><br><br><br><br><br>A Computer Science & Engineering
+                    Student
+                </font>
+            </div>
+            <div>
+                <h2>About Me</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed
+                    cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.
+                    Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget
+                    nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                    Curabitur sodales ligula in libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                    nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum
+                    imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris
+                    massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per
+                    conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero.
+                </p>
+            </div>
         </div>
-        <div>
+    </section>
+    <footer>
+        <div style="padding-top: 70px;">
+            <font style="font-size: 30px;">
+                <center>Educational Qualifications</center>
+            </font>
+            <table align="center" style="padding-top: 30px; width: 90%;" border="1" cellpadding="25">
+                <tr style="font-size: large;" align="center">
+                    <th>Machine Learning</th>
+                    <th>Bachelor in Computer Science</th>
+                    <th>Higher Secondary Education</th>
+                </tr>
+                <tr align="center">
+                    <td>2019 - Present</td>
+                    <td>2018 - Present</td>
+                    <td>2016 - 2018</td>
+                </tr>
+                
+                <tr>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed
+                        cursus ante dapibus diam. Sed nisi.</td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed
+                        cursus ante dapibus diam. Sed nisi.</td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed
+                        cursus ante dapibus diam. Sed nisi.</td>
+                </tr>
 
+                
+            </table>
         </div>
-    </div>
-
+    </footer>
+    <script></script>
 </body>
 
 </html>
