@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <style>
+            * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+  margin-top: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  height: 300px;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+        </style>
+
+    </head>
+    <body>
+        <div style="padding-top: 70px;">
+            <font style="font-size: xx-large;font-family:Arial, Helvetica, sans-serif;">
+                <center><b>Educational Qualifications</b></center></font>
+        </div>
+        <div class="row">
+            <div class="column">
+              <div class="card" style="line-height: 25px;">
+                <img src="59137-ceremony-and-certificate-degree-cap-graduation-bachelor.png" width="120px" height="120px">
+                <center><div style="font-family: 'Courier New', Courier, monospace;font-size: larger;">
+                    <b>Bachelors of Technology</b></div></center>
+                <br>
+                I'm currently pursuing my Bachelors of Technology in 
+                Computer Science & Engineering from<br> 
+                <strong>Nirma University, Ahmedabad</strong>
+                <br><i>Year : 2018 - Present</i>
+            </div>
+            </div>
+            <div class="column">
+              <div class="card" style="line-height: 25px;">
+                <img src="Picture12(0).png" width="120px" height="120px">
+                <center><div style="font-family: 'Courier New', Courier, monospace;font-size: larger;">
+                    <b>Higher Secondary Education</b></div></center>
+                <br>
+                I completed my higher secondary education from<br> 
+                <strong>Shree Gattu Vidayalaya, Ankleshwar.</strong>
+                <br><i>Year : 2016 - 2018</i>
+            </div>
+            </div>
+          </div>
+    </body>
+</html>
