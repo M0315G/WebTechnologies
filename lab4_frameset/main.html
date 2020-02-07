@@ -2,20 +2,71 @@
 
 <head>
     <title>My Proile</title>
+    <style>
+        .body{
+            margin:0;
+            padding: 0;
+        }
+        .about {
+            height: 100vh;
+            display: flex;
+        }
+
+        .profile_pic {
+            width: 50%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            overflow-x: hidden;
+            overflow-y: hidden;
+
+        }
+
+        .about_pages {
+            width: 50%;
+
+        }
+
+        .about_pages div {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            color: white;
+        }
+
+        .about_pages div>p {
+            width: 80%;
+            font-size: 18px;
+            line-height: 30px;
+        }
+
+        .about_pages div:nth-child(1) {
+            background-color: #1f586b;
+        }
+    </style>
 </head>
 
-<body bgcolor="#87CEEB">
-    <div>
-        <center><img src="user.png" width="500px" height="500px"></center>
-    </div>
-    <div>
-        <font style="font-size: x-large;">
-            <center>"Innovation is what keeps me going.
-                Always learn new things and then Innovate!"</center>
-        </font>
-    </div>
-
-
+<body>
+    <section class="about">
+        <div class="profile_pic">
+            <img src="pic.jpg" width="100%">
+        </div>
+        <div class="about_pages">
+            <div style="height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white; line-height: 5px;">
+                <font style="font-size: 30px;">
+                    <center>Manish Gupta</center><br><br><br><br><br><br><br><br>A Computer Science & Engineering
+                    Student
+                </font>
+            </div>
+        </div>
+    </section>
 </body>
-
 </html>

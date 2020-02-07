@@ -1,25 +1,211 @@
 <html>
 
 <head>
+    <title>The Ultimate Treasure Hunt!</title>
+    <style>
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            background-color: black;
+            overflow: hidden;
+            position: fixed;
+            width: 100%;
+        }
 
+        li {
+            float: left;
+            padding: 3px;
+            padding-left: 10px;
+            border-right: 1px whitesmoke;
+        }
+
+        li a {
+            display: inline-block;
+            padding: 14px 16px;
+            color: white;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+        }
+
+        .menu {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .example::-webkit-scrollbar {
+            display: none;
+            width: 0px;
+            background: transparent;
+        }
+
+        td {
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input[type=text],
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        #register {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        input[type-radio] {
+            display: inline;
+            padding-left: 100px;
+        }
+
+        .radio {
+            padding-left: 100px;
+        }
+    </style>
 
 </head>
 
 <body>
-    <center><h2>Enter your details to subscribe!</h2></center>
-    <form style="margin-top: 50px;">
-        <table style="width: 50%;" align="center">
+    <div class="menu">
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT THE CONTEST</a></li>
+            <li><a href="#register">REGISTER</a></li>
+            <li style="float: right;padding-right: 15px;"><a href="#FAQs">FAQs</a></li style="float: right;">
+        </ul>
+    </div>
+    <div id="home" style="padding-top: 50px;">
+        <img src="main.jpg" width="100%" usemap="#mainmap">
+        <map name="mainmap" id="#mainmap">
+            <area shape="rect" coords="350,378,480,450" href="https://www.scaramangashop.co.uk/Fashion-and-Furniture-Blog/history-wooden-chests-storage-boxes/">
+            <area shape="circle" coords="573,662,80" href="https://www.nationalgeographic.org/encyclopedia/compass/">
+            <area shape="circle" coords="660,335,30" href="http://pirates.hegewisch.net/money.html">
+            <area shape="rect" coords="530,337,593,402" href="http://pirates.hegewisch.net/money.html">
+            <area shape="poly" coords="979,331,1009,361,1071,362,1095,393,1091,471,984,429,984,490,974,423" href="https://www.vispronet.com/blog/famous-pirate-flags/">
+            <area shape="poly" coords="772,387,1058,240,1097,273,1010,327,971,303,960,355,812,455,767,435" href="https://www.quora.com/What-is-a-pirates-telescope-called">
+            <area shape="rect" coords="399,690,464,760" herf="http://pirates.hegewisch.net/money.html">
+            <area shape="rect" coords="960,712,1016,790" href="http://pirates.hegewisch.net/money.html">
+            <area shape="poly" coords="1316,538,1235,670,1223,773,1242,800,1421,717,1374,549" href="https://www.thoughtco.com/pirate-ships-overview-2136229">
+            <area shape="poly" coords="91,436,287,108,490,162,562,196" href="http://bbprivateer.ca/?q=book%2Fexport%2Fhtml%2F7">
+        </map>
+    </div>
+    <div id="about">
+        <img src="aboutback.jpg" width="100%">
+    </div>
+    <div id="register" style="padding-top: 50px;">
+        <font style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size: xx-large;">
+            <center>Registration Form</center>
+        </font>
+        <form action="/" width="80%">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="usa">India</option>
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+                <option value="usa">Bangladesh</option>
+                <option value="usa">Russia</option>
+                <option value="usa">London</option>
+                <option value="usa">Sri Lanka</option>
+            </select>
+
+            <label>Select your Gender</label>
+            <br>
+            <input type="radio" name="gender" value="male" checked class="radio"> Male<br>
+            <input type="radio" name="gender" value="female" class="radio"> Female<br>
+            <input type="radio" name="gender" value="other" class="radio"> Other
+            
+            <label></label>
+
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div id="FAQs" style="padding-top: 70px;">
+        <font style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size: xx-large;">
+            <center>FAQs</center>
+        </font>
+        <br><br><br>
+        <table align="center" border="2px" style="border-collapse: collapse;">
             <tr>
-                <td>First Name:-</td>
-                <td>Last name:-</td>
+                <td>Q.</td>
+                <td>What is the age limit for the participants?</td>
             </tr>
             <tr>
-                <td><input type="text" name="Fname"></td>
-                <td><input type="text" name="Lname"></td>
+                <td>Ans.</td>
+                <td>There is not limit to the age! Whether you're a little boy or a 70 year old man, you can still join
+                    the contest.</td>
             </tr>
         </table>
-        
-    </form>
+
+        <br>
+        <br>
+        <br>
+        <div style="background-color:#151114;color: white; width: 100%; height:250px">
+            <br>
+            <br>
+            <font style="font-size: x-large;">
+                <center>More about us</center>
+            </font>
+            <table align="center" width="80%" style="text-align: center;color: white;">
+                <tr>
+                    <td>About the company<br><br>We at Entertainment Inc. believe in<br>providing the best to our
+                        customers.</td>
+                    <td>
+                        <table style="text-align: center;color: white;" width="100%">
+                            <tr>
+                                <td colspan="2">Find us here</td>
+                            </tr>
+                            <tr>
+                                <td align="right"><img src="facebook.png" width="37px" height="30px"></td>
+                                <td align="left">Facebook</td>
+                            </tr>
+                            <tr>
+                                <td align="right"><img src="insta.png" width="30px" height="30px"></td>
+                                <td align="left">Instagram</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
 </body>
 
 </html>
